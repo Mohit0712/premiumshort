@@ -25,7 +25,7 @@ HELP_MESSAGE = """Hey there! My name is {firstname} and I'm a link convertor and
 
 I have a ton of handy features to help you out, such as:
 
-- [Hyperlink](https://t.me/{earn4shareuser}) support 🔗
+- [Hyperlink](https://t.me/earn4shareuser) support 🔗
 - Button conversion support 🔘
 - Header and footer text support 📝
 - Replace username function 📎
@@ -47,7 +47,7 @@ ABOUT_TEXT = """
     
 `📝 Language:` [Python 3](https://www.python.org/)
 `🧰 Framework:` [Pyrogram](https://github.com/pyrogram/pyrogram)
-`👨‍💻 Developer:` [Dev](t.me/ask_admin001)
+`👨‍💻 Developer:` [Dev](t.me/earn4shareuser)
 `📢 Support:` [Talk Bot](https://earn4shareuser)
 `🌐 Source Code:` [GitHub](https://t.me/earn4shareuser)
 """
