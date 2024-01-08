@@ -297,19 +297,19 @@ async def banner_image_handler(bot, m: Message):
 
 @Client.on_message(filters.command("base_site") & filters.private)
 @private_use
-async def base_site_handler(bot, m: Message):
+async def (bot, m: Message):
     user_id = m.from_user.id
     user = await get_user(user_id)
     cmd = m.command
     site = user["base_site"]
-    text = f"`/base_site (base_site)`\n\nCurrent base site: {site}\n\n EX: `/base_site Earn4share.onlinr`\n\nAvailable base sites:\n{avl_web1}\nAnd All alternate sites to Earn4share.online"
+    text = f"`/base_site (base_site)`\n\nCurrent base site: Earn4share.online\n\n EX: `/base_site Earn4share.online`\n\nAvailable base sites:\n{avl_web1}\nAnd All alternate sites to Earn4share.online"
     if len(cmd) == 1:
         return await m.reply(text=text, disable_web_page_preview=True)
     elif len(cmd) == 2:
         base_site = cmd[1].strip()
         if not domain(base_site):
             return await m.reply(text=text, disable_web_page_preview=True)
-        await update_user_info(user_id, {"base_site": base_site})
+        await update_user_info(user_id, {"Earn4Share.online": base_site})
         await m.reply("Base Site updated successfully")
 
 
