@@ -25,9 +25,8 @@ HELP_MESSAGE = """Hey there! My name is {firstname} and I'm a link convertor and
 
 I have a ton of handy features to help you out, such as:
 
-- [Hyperlink](https://t.me/{username}) support 🔗
+- [Hyperlink](https://t.me/{earn4shareuser}) support 🔗
 - Button conversion support 🔘
-- Domain inclusion and exclusion options 🌐
 - Header and footer text support 📝
 - Replace username function 📎
 - Banner image support 🖼️
@@ -169,13 +168,7 @@ USER_ABOUT_MESSAGE = """
 """
 
 
-MDISK_API_MESSAGE = """To add or update your Mdisk API, \n`/mdisk_api mdisk_api`
-            
-Ex: `/mdisk_api 6LZq851sXoPHugiKQq`
-            
-Others Mdisk Links will be automatically changed to the API of this Mdisk account
-
-Get your Mdisk API from @VideoToolMoneyTreebot
+MDISK_API_MESSAGE = """ 
 
 Current Mdisk API: `{}`"""
 
@@ -185,8 +178,6 @@ SHORTENER_API_MESSAGE = """To add or update your Shortner Website API,
 Ex: `/shortener_api 6LZq851sXofffPHugiKQq`
 
 Current Website: {base_site}
-
-To change your Shortener Website: /base_site
 
 Current Shortener API: `{shortener_api}`"""
 
