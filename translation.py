@@ -13,9 +13,9 @@ I'll handle the rest and get those links shortened or converted in a short time!
 
 START_MESSAGE = """Hi there {} 
 
-Send me a link or post and I'll shorten it for you!
+<b>Send me a link or post and I'll shorten it for you!
 
-To learn more about what I can do, just type /help.
+To learn more about what I can do, just type /help. </b>
 
 Method: {}
 Shortener website: {}
