@@ -181,20 +181,6 @@ async def log_file(bot, message):
         await message.reply(str(e))
 
 
-@Client.on_message(filters.command("mdisk_api") & filters.private)
-@private_use
-async def mdisk_api_handler(bot, message: Message):
-    user_id = message.from_user.id
-    user = await get_user(user_id)
-    cmd = message.command
-    if len(cmd) == 1:
-        return await message.reply(MDISK_API_MESSAGE.format(user["mdisk_api"]))
-    elif len(cmd) == 2:
-        api = cmd[1].strip()
-        await update_user_info(user_id, {"mdisk_api": api})
-        await message.reply(f"Mdisk API updated successfully to {api}")
-
-
 @Client.on_message(filters.command("shortener_api") & filters.private)
 @private_use
 async def shortener_api_handler(bot, m: Message):
